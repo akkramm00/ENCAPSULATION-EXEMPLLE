@@ -45,6 +45,27 @@ class Utilisateur {
 <p>Dans cet exemple ,la classe 'Utilisateur a des propriétés privées(nom, prenom, email) qui ne peuvent etre accédés diréctement. Les accesseurs (getters et mutatteurs (setters)  sont utilisés pour lire et mdifier les valeurs des propriétés respectivement.</p>
 
 <h2> Utilisation de la portée "protected":</h2>
+
+    <?php
+
+class Animal {
+  protected String $nom;
+  public function setNom(String $nom) {
+  $this -> nom = $nom;
+  }
+}
+
+class Chat extends Animal {
+  public function getNom() :String {
+    return $this->nom;
+  }
+}
+
+$monChat = new Chat();
+$monChat-> setNom("Minou");
+echo $monChat-> getNom(); // affiche "Minou"
+
+?>
     
   
  
