@@ -64,8 +64,11 @@ class Chat extends Animal {
 $monChat = new Chat();
 $monChat-> setNom("Minou");
 echo $monChat-> getNom(); // affiche "Minou"
-
 ?>
+<p>
+  Dans cet exemple , la propriété 'nom' de la classe "Animal" est définie avec une portée 'protected'.
+  Cela signifie que la propriété n'est pas accessible depuis l'extérieur de la classe , mais est accessible par les osus-classes (ici, la classe 'Chat'). Les accesseurs ne sont pas nécéssaires, car la propriété est accessible par la sous-classe.
+</p>
     
   
  
