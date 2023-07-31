@@ -25,7 +25,7 @@ class Utilisateur {
   }
 
   public function getPrenom() :String {
-  return $this-> prenom
+  return $this-> prenom;
   }
 
   public function setPrenom(String $prenom) {
