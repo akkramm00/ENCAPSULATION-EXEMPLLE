@@ -31,6 +31,7 @@ class Utilisateur {
   public function setPrenom(String $prenom) {
     $this-> prenom = $prenom;
   }
+  
 
   public function getEmail() :String {
   return $this -> email;
@@ -40,8 +41,11 @@ class Utilisateur {
     $this-> email = $email;
   }
 }
-
 ?> 
+<p>Dans cet exemple ,la classe 'Utilisateur a des propriétés privées(nom, prenom, email) qui ne peuvent etre accédés diréctement. Les accesseurs (getters et mutatteurs (setters)  sont utilisés pour lire et mdifier les valeurs des propriétés respectivement.</p>
 
+<h2> Utilisation de la portée "protected":</h2>
+    
+  
  
 </html>
